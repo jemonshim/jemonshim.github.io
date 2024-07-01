@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@v1.8.1/dist/model-viewer.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,18 +16,30 @@
             margin: 20px 0;
         }
         .viewer {
-            width: 300px;
-            height: 300px;
+            width: 640px;
+            height: 480px;
             margin: 10px;
+            border: none;
         }
         .answer {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            margin: 10px;
         }
         .answers {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+        .creators-embed-wrapper p {
+            font-size: 13px;
+            font-weight: normal;
+            margin: 5px;
+            color: #4A4A4A;
+        }
+        .creators-embed-wrapper a {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -37,7 +47,10 @@
     <h1>Survey</h1>
     <div class="question">
         <p>Question 1: 다음 보기 중 아래 모양과 같은 것을 고르세요.</p>
-        <model-viewer id="main-object-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_01.glb" alt="Main 3D Model" auto-rotate camera-controls></model-viewer>
+        <div class="creators-embed-wrapper">
+            <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2F2940340100607157%2F2940340100607157.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+            <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2F2940340100607157%2F2940340100607157.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+        </div>
     </div>
     <div class="question">
         <p>Answers:</p>
@@ -45,27 +58,140 @@
             <div class="answer">
                 <input type="checkbox" id="answer1" name="answer1">
                 <label for="answer1">Answer 1</label>
-                <model-viewer id="answer1-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_02.glb" alt="Answer 1" auto-rotate camera-controls></model-viewer>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2F2940340100607157%2Fanswer1.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer1.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
             </div>
             <div class="answer">
                 <input type="checkbox" id="answer2" name="answer2">
                 <label for="answer2">Answer 2</label>
-                <model-viewer id="answer2-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_02.glb" alt="Answer 2" auto-rotate camera-controls></model-viewer>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer2.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer2.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
             </div>
             <div class="answer">
                 <input type="checkbox" id="answer3" name="answer3">
                 <label for="answer3">Answer 3</label>
-                <model-viewer id="answer3-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_02.glb" alt="Answer 3" auto-rotate camera-controls></model-viewer>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer3.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer3.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
             </div>
             <div class="answer">
                 <input type="checkbox" id="answer4" name="answer4">
                 <label for="answer4">Answer 4</label>
-                <model-viewer id="answer4-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_02.glb" alt="Answer 4" auto-rotate camera-controls></model-viewer>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
             </div>
             <div class="answer">
                 <input type="checkbox" id="answer5" name="answer5">
                 <label for="answer5">Answer 5</label>
-                <model-viewer id="answer5-viewer" class="viewer" src="https://jemonshim.github.io/shapes/sphere/sphere_blue_02.glb" alt="Answer 5" auto-rotate camera-controls></model-viewer>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701아래는 Creators3D 임베드 코드를 포함하는 HTML 설문 조사 페이지 예제입니다. 각 GLB 모델을 iframe을 통해 보여주고, 질문과 답변을 포함합니다.
+
+### HTML 코드 예제
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .viewer {
+            width: 640px;
+            height: 480px;
+            margin: 10px;
+            border: none;
+        }
+        .answer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        .answers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .creators-embed-wrapper p {
+            font-size: 13px;
+            font-weight: normal;
+            margin: 5px;
+            color: #4A4A4A;
+        }
+        .creators-embed-wrapper a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey</h1>
+    <div class="question">
+        <p>Question 1: 다음 보기 중 아래 모양과 같은 것을 고르세요.</p>
+        <div class="creators-embed-wrapper">
+            <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2F2940340100607157%2F2940340100607157.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+            <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2F2940340100607157%2F2940340100607157.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+        </div>
+    </div>
+    <div class="question">
+        <p>Answers:</p>
+        <div class="answers">
+            <div class="answer">
+                <input type="checkbox" id="answer1" name="answer1">
+                <label for="answer1">Answer 1</label>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer1.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer1.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="answer2" name="answer2">
+                <label for="answer2">Answer 2</label>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer2.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer2.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="answer3" name="answer3">
+                <label for="answer3">Answer 3</label>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer3.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer3.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="answer4" name="answer4">
+                <label for="answer4">Answer 4</label>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="answer5" name="answer5">
+                <label for="answer5">Answer 5</label>
+                <div class="creators-embed-wrapper">
+                    <iframe allow="camera" width="640" height="480" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: none"></iframe>
+                    <p><a href="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240701%2Fanswer4.glb&autorotate=true&json-data=1719834298363&decrypt=1&tv=165" target="_blank">Visit Model</a> by <a target="_blank" href="https://www.creators3d.com/artist/47098/Jeong-eun">Jeong-eun</a> hosted with ❤️️ by <a href="https://www.creators3d.com/home?ref=embed&var=47098" target="_blank">Creators3D</a></p>
+                </div>
             </div>
         </div>
     </div>
