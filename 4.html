@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptual Similarity for 3D Shapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left-panel {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 20px;
+            align-items: flex-start;
+        }
+        .right-panel {
+            flex: 8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow-x: auto;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .label {
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: -20px;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: flex-start;
+            overflow-x: auto;
+        }
+        .outer-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            overflow-x: auto;
+        }
+        .inner-wrapper {
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .creators-embed-wrapper {
+            flex: 0 0 auto;
+            margin: 5px;
+            text-align: center;
+        }
+        iframe {
+            width: 240px;
+            height: 240px;
+            border: none;
+        }
+        .number {
+            text-align: center;
+            margin-bottom: -15px;
+            font-weight: bold;
+        }
+        .button-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Perceptual Similarity for 3D Shapes</h1>
+        <p>1. 아래 <strong>[보기]</strong>와 유사한 모양을 모두 고르시오.<br>
+        제시된 3D 객체들을 여러 각도에서 확인한 후 유사하다고 생각되는 것의 번호를 모두 체크하고, 유사도를 매겨주세요.</p>
+        <p>2. 아래 <strong>[보기]</strong>와 유사하지 않는 모양을 모두 고르시오.<br>
+        제시된 3D 객체들을 여러 각도에서 확인한 후 유사하지 않다고 생각되는 것의 번호를 모두 체크하고, 유사도를 매겨주세요.</p>    
+        <p><strong><마우스 조작 방법></strong><br>
+        - 좌클릭 드래그: 객체 회전<br>
+        - 우클릭 드래그: 공간 회전<br>
+        - 스크롤 업: 줌 인<br>
+        - 스크롤 다운: 줌 아웃</p>
+    </div>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="box">
+                <div class="label">[보기]</div>
+                <div class="wrapper">
+                    <div class="creators-embed-wrapper">
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="outer-wrapper">
+                <div class="row">
+                    <div class="creators-embed-wrapper">
+                        <div class="number">1</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">2</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">3</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">4</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="creators-embed-wrapper">
+                        <div class="number">5</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">6</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">7</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">8</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="creators-embed-wrapper">
+                        <div class="number">9</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">10</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">11</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">12</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="creators-embed-wrapper">
+                        <div class="number">13</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">14</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">15</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                    <div class="creators-embed-wrapper">
+                        <div class="number">16</div>
+                        <iframe allow="camera" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <button class="button" onclick="window.location.href='3.html'">이전으로 이동</button>
+        <button class="button" onclick="window.location.href='5.html'">다음으로 이동</button>
+    </div>
+</body>
+</html>
