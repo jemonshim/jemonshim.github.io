@@ -33,10 +33,14 @@
             justify-content: center;
             overflow-x: auto;
         }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+        }
         .label {
             font-weight: bold;
             text-align: left;
-            margin-bottom: 10px;
+            margin-bottom: -20px;
         }
         .wrapper {
             display: flex;
@@ -60,7 +64,7 @@
         }
         .creators-embed-wrapper {
             flex: 0 0 auto;
-            margin: 10px;
+            margin: 5px;
             text-align: center;
         }
         iframe {
@@ -70,7 +74,7 @@
         }
         .number {
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: -15px;
             font-weight: bold;
         }
     </style>
@@ -89,10 +93,12 @@
 
     <div class="container">
         <div class="left-panel">
-            <div class="label">[보기]</div>
-            <div class="wrapper">
-                <div class="creators-embed-wrapper">
-                    <iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240709%2F1174125146630249%2F1174125146630249.glb&autorotate=true&json-data=1720541678935&decrypt=1&tv=165"></iframe>
+            <div class="box">
+                <div class="label">[보기]</div>
+                <div class="wrapper">
+                    <div class="creators-embed-wrapper">
+                        <iframe allow="camera" src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20240709%2F1174125146630249%2F1174125146630249.glb&autorotate=true&json-data=1720541678935&decrypt=1&tv=165"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
